@@ -1,0 +1,67 @@
+body {
+	height: 9000px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.cls {
+	clear: both;
+}
+
+.pad {
+	padding: 15px;
+}
+
+.mar {
+	margin: 15px;
+}
+
+.pad-0 {
+	padding: 0;
+}
+
+.mar-0 {
+	margin: 0;
+}
+
+.no-radius {
+	@include border-radius(0);
+}
+
+.rounded {
+	@include border-radius(5px);
+}
+
+.fw300 {
+	font-weight: 300;
+}
+
+.fw400 {
+	font-weight: 400;
+}
+
+.fw500 {
+	font-weight: 500;
+}
+
+.fw600 {
+	font-weight: 600;
+}
+
+.fw700 {
+	font-weight: 700;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+.w-100 {
+	width: 100% !important;
+}
+
+@for $i from 0 through 10 {
+	.mar-b-#{$i*5} {
+			margin-top: #{$i * 5}px !important;
+	}
+}
+
