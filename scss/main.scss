@@ -13,10 +13,12 @@
 @import 'base/_keyframes.scss';
 
 /* EFF - # */
+@import 'eff/hover-master/hover';
 @import 'eff/animate/animate.scss';
 
 /* MODULES - Individual site components */
 @import 'modules/_button.scss';
+@import 'modules/_section';
 @import 'modules/_components.scss';
 
 /* PAGES - styles */

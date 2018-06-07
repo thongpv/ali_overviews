@@ -1,5 +1,4 @@
 body {
-	height: 9000px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -61,7 +60,7 @@ body {
 
 @for $i from 0 through 10 {
 	.mar-b-#{$i*5} {
-			margin-top: #{$i * 5}px !important;
+			margin-bottom: #{$i * 5}px !important;
 	}
 }
 
