@@ -1,0 +1,24 @@
+// MENU
+@media only screen and (max-width: 1200px) { 
+  .header__menu_top {
+    overflow: hidden;
+    transition: $time;
+    height: 0;
+
+    ul {
+      padding-bottom: 30px !important;
+
+      li {
+        display: block !important;
+
+        a {
+          padding: 10px !important;
+        }
+      }
+    }
+  }
+
+  .header__menu_top.is-active {
+    height: inherit;
+  }
+}

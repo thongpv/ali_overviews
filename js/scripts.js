@@ -2,6 +2,7 @@ $(document).ready(function() {
 	// INIT
 	backToTop();
 	new WOW().init();
+	menu_mobile();
 
 	// FUNCTION
 });
@@ -28,4 +29,16 @@ function backToTop() {
 	        }, 700);
 	    });
 	}
+}
+
+function menu_mobile () {
+	// document.getElementById('butn-menu-top').addEventListener("click", function() {
+	// 	this.classList.toggle("is-active");
+	// 	document.getElementById('wrap-menu-top').hasClass(a, 'class-desu')
+	// }, false);
+
+	$('#butn-menu-top').on('click', function () {
+		$(this).toggleClass('is-active')
+		$('#wrap-menu-top').toggleClass('is-active')
+	});
 }

@@ -4,7 +4,7 @@ $function: ease;
 $fill: both;
 $visibility: hidden;
 
-// @import "properties";
+@import "properties";
 // @import "bounce";
 // @import "bounceIn";
 // @import "bounceInDown";
@@ -23,7 +23,7 @@ $visibility: hidden;
 // @import "fadeInLeftBig";
 // @import "fadeInRight";
 // @import "fadeInRightBig";
-// @import "fadeInUp";
+@import "fadeInUp";
 // @import "fadeInUpBig";
 // @import "fadeOut";
 // @import "fadeOutDown";
@@ -65,9 +65,9 @@ $visibility: hidden;
 // .fadeInRightBig {
 // 	@include fadeInRightBig($duration, $delay, $function, $fill, $visibility);
 // }
-// .fadeInUp {
-// 	@include fadeInUp($duration, $delay, $function, $fill, $visibility);
-// }
+.fadeInUp {
+	@include fadeInUp($duration, $delay, $function, $fill, $visibility);
+}
 // .fadeInUpBig {
 // 	@include fadeInUpBig($duration, $delay, $function, $fill, $visibility);
 // }

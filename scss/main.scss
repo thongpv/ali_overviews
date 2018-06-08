@@ -19,7 +19,10 @@
 /* MODULES - Individual site components */
 @import 'modules/_button.scss';
 @import 'modules/_section';
-@import 'modules/_components.scss';
+@import 'modules/_components';
+@import 'modules/_typography';
+
+@import 'hamburgers/hamburgers';
 
 /* PAGES - styles */
 @import 'pages/_contact.scss';

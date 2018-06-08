@@ -1,5 +1,6 @@
 body {
 	font-family: 'Montserrat', sans-serif;
+	color: #333;
 }
 
 .cls {
@@ -58,9 +59,12 @@ body {
 	width: 100% !important;
 }
 
+.mw-100 {
+	max-width: 100%;
+}
+
 @for $i from 0 through 10 {
 	.mar-b-#{$i*5} {
 			margin-bottom: #{$i * 5}px !important;
 	}
 }
-
