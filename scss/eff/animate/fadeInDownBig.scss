@@ -31,7 +31,3 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
-
-.fadeInDownBig {
-	@include fadeInDownBig($duration, $delay, $function, $fill, $visibility);
-}

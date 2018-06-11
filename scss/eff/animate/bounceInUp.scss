@@ -41,7 +41,3 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
-
-.bounceInUp {
-	@include bounceInUp($duration, $delay, $function, $fill, $visibility);
-}

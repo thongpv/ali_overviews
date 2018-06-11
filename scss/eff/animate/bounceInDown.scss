@@ -41,7 +41,3 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
-
-.bounceInDown {
-	@include bounceInDown($duration, $delay, $function, $fill, $visibility);
-}

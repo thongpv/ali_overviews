@@ -31,7 +31,3 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
-
-.fadeInLeftBig {
-	@include fadeInLeftBig($duration, $delay, $function, $fill, $visibility);
-}

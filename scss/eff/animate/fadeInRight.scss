@@ -31,11 +31,3 @@
   @include fill-mode($fill);
   @include visibility($visibility);
 }
-
-.fadeInLeft {
-	@include fadeInLeft($duration, $delay, $function, $fill, $visibility);
-}
-
-.fadeInRight {
-	@include fadeInRight($duration, $delay, $function, $fill, $visibility);
-}

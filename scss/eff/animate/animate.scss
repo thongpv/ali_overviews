@@ -16,7 +16,7 @@ $visibility: hidden;
 // @import "bounceOutLeft";
 // @import "bounceOutRight";
 // @import "bounceOutUp";
-// @import "fadeIn";
+@import "fadeIn";
 // @import "fadeInDown";
 // @import "fadeInDownBig";
 // @import "fadeInLeft";
@@ -62,6 +62,57 @@ $visibility: hidden;
 // @import "wiggle";
 // @import "wobble";
 
+// .bounce {
+// 	@include bounce($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceIn {
+// 	@include bounceIn($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceInDown {
+// 	@include bounceInDown($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceInLeft {
+// 	@include bounceInLeft($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceInRight {
+// 	@include bounceInRight($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceInUp {
+// 	@include bounceInUp($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceOut {
+// 	@include bounceOut($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceOutDown {
+// 	@include bounceOutDown($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceOutLeft {
+// 	@include bounceOutLeft($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceOutRight {
+// 	@include bounceOutRight($duration, $delay, $function, $fill, $visibility);
+// }
+// .bounceOutUp {
+// 	@include bounceOutUp($duration, $delay, $function, $fill, $visibility);
+// }
+.fadeIn {
+	@include fadeIn($duration, $delay, $function, $fill, $visibility);
+}
+// .fadeInDown {
+// 	@include fadeInDown($duration, $delay, $function, $fill, $visibility);
+// }
+// .fadeInDownBig {
+// 	@include fadeInDownBig($duration, $delay, $function, $fill, $visibility);
+// }
+// .fadeInLeft {
+// 	@include fadeInLeft($duration, $delay, $function, $fill, $visibility);
+// }
+// .fadeInLeftBig {
+// 	@include fadeInLeftBig($duration, $delay, $function, $fill, $visibility);
+// }
+// .fadeInRight {
+// 	@include fadeInRight($duration, $delay, $function, $fill, $visibility);
+// }
 // .fadeInRightBig {
 // 	@include fadeInRightBig($duration, $delay, $function, $fill, $visibility);
 // }

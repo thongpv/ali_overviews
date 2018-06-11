@@ -457,12 +457,12 @@
 
 
 /* SHADOW/GLOW TRANSITIONS */
-// @import "effects/shadow-and-glow-transitions/glow";
-// @if $includeClasses {
-// 	.#{$nameSpace}-glow {
-// 		@include glow();
-// 	}
-// }
+@import "effects/shadow-and-glow-transitions/glow";
+@if $includeClasses {
+	.#{$nameSpace}-glow {
+		@include glow();
+	}
+}
 
 // @import "effects/shadow-and-glow-transitions/shadow";
 // @if $includeClasses {

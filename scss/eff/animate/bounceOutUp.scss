@@ -1,6 +1,3 @@
-.bounceOutUp {
-	@include bounceOutUp($duration, $delay, $function, $fill, $visibility);
-}
 @-webkit-keyframes bounceOutUp {
 	0% {-webkit-transform: translateY(0);}
 	20% {opacity: 1; -webkit-transform: translateY(20px);}
