@@ -67,6 +67,10 @@ body {
 	overflow: hidden !important;
 }
 
+.relative {
+	position: relative;
+}
+
 @for $i from 0 through 10 {
 	.mar-b-#{$i*5} {
 			margin-bottom: #{$i * 5}px !important;

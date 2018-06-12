@@ -102,7 +102,7 @@
 
                         <div class="col-lg-6 header__menu_top" id="wrap-menu-top">
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#">Services</a></li>
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="#">Support</a></li>
@@ -210,15 +210,15 @@
         <div class="row wrap_flex">
             <div class="col-lg-6 app-websites__left hidden-xs hidden-sm hidden-md">
                 <div class="app-websites__img" id="app-websites_step-1">
-                    <img src="images/home/app-websites-1.gif" alt="">
+                    <img src="images/home/ar.gif" alt="">
                 </div>
 
                 <div class="app-websites__img" id="app-websites_step-2">
-                    <img src="images/home/app-websites-2.gif" alt="">
+                    <img src="images/home/as.gif" alt="">
                 </div>
 
                 <div class="app-websites__img" id="app-websites_step-3">
-                    <img src="images/home/app-websites-3.gif" alt="">
+                    <img src="images/home/ao.gif" alt="">
                 </div>
             </div>
 
@@ -336,35 +336,60 @@
         <div class="container">
             <div class="row footer__top">
                 <div class="col-md-3 col-xs-12">
-                    <div class="logo-footer text-md-center">
+                    <div class="logo-footer text-md-center  mar-b-30">
                         <a href="#"><img src="images/logo-footer.png" alt=""></a>
+                    </div>
+
+                    <p class="footer__desc mar-b-35">FireApps is a must-have tool that allows you to SAVE MORE TIME & GET MORE MONEY. So easy and effective that you want to try it right away.</p>
+
+                    <div class="footer__social text-sm-center">
+                        <a href="#"><span class="footer-social youtube"></span></a>
+                        <a href="#"><span class="footer-social facebook"></span></a>
+                        <a href="#"><span class="footer-social share-this"></span></a>
                     </div>
                 </div>
 
-                <div class="col-md-6 col-xs-12 footer__menu">
-                    <ul class="text-center">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">SUPPORT</a></li>
-                        <li><a href="#">CAREERS</a></li>
-                    </ul>
-                </div>
+                <div class="col-md-8 col-md-offset-1">
+                    <div class="row footer__menu">
+                        <div class="col-lg-3 col-xs-3 footer__menu__item">
+                            <h6 class="footer__menu__title">
+                                HOME
+                            </h6>
 
-                <div class="col-md-3 col-xs-12 footer__social">
-                    <ul class="text-right text-sm-center">
-                        <li><a href="#" class="hvr-float-shadow"><img src="images/be.png" alt=""></a></li>
-                        <li><a href="#" class="hvr-float-shadow"><img src="images/metarial.png" alt=""></a></li>
-                        <li><a href="#" class="hvr-float-shadow"><img src="images/dribble.png" alt=""></a></li>
-                    </ul>
+                            <ul>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-xs-3 footer__menu__item">
+                            <h6 class="footer__menu__title">
+                                SUPPORT
+                            </h6>
+
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Term of Services</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-6 col-xs-6 footer__menu__item">
+                            <h6 class="footer__menu__title">
+                                BLOG POSTS
+                            </h6>
+
+                            <ul>
+                                <li><a href="#">The Ultimate Guide to AliExpress Dropshipping</a></li>
+                                <li><a href="#">Business Ideas 2018</a></li>
+                                <li><a href="#">How To Select Dropshipping Suppliers</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <hr>
-                </div>
-            </div>
+            <div class="row"><div class="col-md-12"><hr></div></div>
 
             <div class="row footer__bot">
                 <div class="col-md-6 col-sm-6 text-xs-center">
@@ -373,8 +398,11 @@
                 
                 <div class="col-md-6 col-sm-6 footer__bot__policy">
                     <ul class="text-right text-xs-center">
-                        <li><a href="#">PRIVACY POLICY</a></li>
-                        <li><a href="#">TERMS OF SERVICE</a></li>
+                        <li><a href="#">Legal information</a></li>
+                        <li>|</li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li>|</li>
+                        <li><a href="#">English</a></li>
                     </ul>
                 </div>
             </div>
@@ -394,7 +422,7 @@
     <script src="sources/count-up/jquery.counterup.min.js"></script>
 
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('.owl-customers-review.owl-carousel').owlCarousel({
             items: 1,
             margin:10,
             nav:true,

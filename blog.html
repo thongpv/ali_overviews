@@ -72,6 +72,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
 
     <!-- CSS PAGE -->
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="sources/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="sources/owl-carousel/css/owl.theme.default.min.css">
 	<!-- /CSS PAGE -->
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -101,7 +104,7 @@
                             <ul>
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Services</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li class="active"><a href="#">Blog</a></li>
                                 <li><a href="#">Support</a></li>
                                 <li><a href="#">Careers</a></li>
                             </ul>
@@ -119,80 +122,225 @@
     </header>
     <!-- /HEADER -->
 
-    <!-- IMAGE FULL WIDTH -->
-    <section class="img-full-width">
+    <!-- SLIDE FULL WIDTH BLOG -->
+    <section class="slide-blog-fulwid">
+        <div class="owl-carousel owl-theme">
+            <div class="item" bg="images/blog/blog.png">
+                <div class="descript">
+                    <a href="#" class="subtop"><span>&#x025B8;</span> Latest Post</a>
+                    <p class="desc-title">The Power of Customer Testimonial Pages On Your Website</p>
+                    <a href="#" class="btn butn-link">READ MORE</a>
+                </div>
+            </div>
+            <div class="item" bg="images/blog/blog.png">
+                <div class="descript">
+                    <a href="#" class="subtop"><span>&#x025B8;</span> Latest Post</a>
+                    <p class="desc-title">The Power of Customer Testimonial Pages On Your Website</p>
+                    <a href="#" class="btn butn-link">READ MORE</a>
+                </div>
+            </div>
+            <div class="item" bg="images/blog/blog.png">
+                <div class="descript">
+                    <a href="#" class="subtop"><span>&#x025B8;</span> Latest Post</a>
+                    <p class="desc-title">The Power of Customer Testimonial Pages On Your Website</p>
+                    <a href="#" class="btn butn-link">READ MORE</a>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- /IMAGE FULL WIDTH -->
+    <!-- /SLIDE FULL WIDTH BLOG -->
 
     <!-- MAIN CONTENT -->
-    <section class="two-column blog-detail-page">
+    <section class="two-column blog-page">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
-                    <article class="two-column__left">
-                    <span class="status-info right">
+                <div class="col-lg-2">
+                    <!-- LIST POST -->
+                    <article class="most-posts wget-categories" id="wget-categories">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li>
+                                <div class="cp-content">
+                                    <label class="wrap-custom-box">
+                                        <input name="radio" type="radio" checked="checked">
+                                        <span class="checkmark-rdb"></span>
+                                        <span class="lbs">Announcement</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cp-content">
+                                    <label class="wrap-custom-box">
+                                        <input name="radio" type="radio">
+                                        <span class="checkmark-rdb"></span>
+                                        <span class="lbs">Case Study</span>
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="cp-content">
+                                    <label class="wrap-custom-box">
+                                        <input name="radio" type="radio">
+                                        <span class="checkmark-rdb"></span>
+                                        <span class="lbs">General News</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                    <!-- /LIST POST -->
+                </div>
+
+                <div class="col-lg-7 col-md-8">
+                    <!-- item -->
+                    <div class="blog-item relative">
+                        <img src="images/blog/bg-1.png" alt="" class="mw-100 w-100">
+
+                        <span class="status-info left">
                             Announcement
                         </span>
 
-                        <h1 class="blog-title">7 Secrets For Leadership Success</h1>
-                        <p class="blog-subtitle">2 days ago / by <a href="#">Masum Rana</a>  /  3 min read</p>
-                        <div class="blog-content">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-                            industry's standard dummy text ever since the  1500s, when an unknown printer took a galley of type and 
-                            scrambled it t. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                            has been the industry’s standard dummy text ever since the  1500s, when an unknown printer took a galley 
-                            of type and scrambled it to 
-                        </div>
-
-                        <div class="wrap-comment">
-                            <div class="comment-status">
-                                <span>
-                                    <div class="blog-status-icon big-like-active"></div> 10
-                                </span>
-
-                                <span>
-                                    <div class="blog-status-icon big-comment"></div> 10
-                                </span>
+                        <article class="two-column__left">
+                            <div class="blog-title"><a href="#">7 Secrets For Leadership Success</a></div>
+                            <p class="blog-subtitle">2 days ago / by <a href="#">Masum Rana</a>  /  3 min read</p>
+                            <div class="blog-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                                industry's standard dummy text ever since the  1500s, when an unknown printer took a galley of type and 
+                                scrambled it t. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                has been the industry’s standard dummy text ever since the  1500s, when an unknown printer took a galley 
+                                of type and scrambled it to 
                             </div>
-                            <p class="comment-title">Send your comments</p>
-                            <p class="comment-subtitle">Your email address will not be published. Required fields are marked *</p>
-                            <form class="form-horizontal">
-                                <div class="form-group">
-                                    <div class="col-md-12">
-                                        <textarea rows="6" class="form-control" placeholder="Comments"></textarea>
-                                    </div>
+                            <div class="footer">
+                                <div class="count-comment">
+                                    <span class="avts">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                    </span> 
+
+                                    <span class="nums"> +20 more</span>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2" for="name">Your name:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="name">
-                                    </div>
+                                <div class="status">
+                                    <span>
+                                        <div class="blog-status-icon like-active"></div> 10
+                                    </span>
+
+                                    <span>
+                                        <div class="blog-status-icon comment"></div> 10
+                                    </span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- item -->
+                    <div class="blog-item relative">
+                        <a href="#">
+                            <img src="images/blog/bg-2.png" alt="" class="mw-100 w-100">
+                        </a>
+
+                        <span class="status-info left">
+                            Case Study
+                        </span>
+
+                        <article class="two-column__left">
+                            <h1 class="blog-title"><a href="#">7 Secrets For Leadership Success</a></h1>
+                            <p class="blog-subtitle">2 days ago / by <a href="#">Masum Rana</a>  /  3 min read</p>
+                            <div class="blog-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                                industry's standard dummy text ever since the  1500s, when an unknown printer took a galley of type and 
+                                scrambled it t. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                has been the industry’s standard dummy text ever since the  1500s, when an unknown printer took a galley 
+                                of type and scrambled it to 
+                            </div>
+                            <div class="footer">
+                                <div class="count-comment">
+                                    <span class="avts">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                    </span> 
+
+                                    <span class="nums"> +20 more</span>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2" for="email">Your email:</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email">
-                                    </div>
+                                <div class="status">
+                                    <span>
+                                        <div class="blog-status-icon like-active"></div> 10
+                                    </span>
+
+                                    <span>
+                                        <div class="blog-status-icon comment"></div> 10
+                                    </span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- item -->
+                    <div class="blog-item relative">
+                        <a href="#">
+                            <img src="images/blog/bg-2.png" alt="" class="mw-100 w-100">
+                        </a>
+
+                        <span class="status-info left">
+                            General News
+                        </span>
+
+                        <article class="two-column__left">
+                            <h1 class="blog-title"><a href="#">7 Secrets For Leadership Success</a></h1>
+                            <p class="blog-subtitle">2 days ago / by <a href="#">Masum Rana</a>  /  3 min read</p>
+                            <div class="blog-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+                                industry's standard dummy text ever since the  1500s, when an unknown printer took a galley of type and 
+                                scrambled it t. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                has been the industry’s standard dummy text ever since the  1500s, when an unknown printer took a galley 
+                                of type and scrambled it to 
+                            </div>
+                            <div class="footer">
+                                <div class="count-comment">
+                                    <span class="avts">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                        <img src="http://via.placeholder.com/30x30" alt="" class="img-circle">
+                                    </span> 
+
+                                    <span class="nums"> +20 more</span>
                                 </div>
 
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2" for="website">Your website:</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="website">
-                                    </div>
-                                </div>
+                                <div class="status">
+                                    <span>
+                                        <div class="blog-status-icon like-active"></div> 10
+                                    </span>
 
-                                <div class="text-right">
-                                    <button type="submit" class="btn btn-default">SUBMIT</button>
+                                    <span>
+                                        <div class="blog-status-icon comment"></div> 10
+                                    </span>
                                 </div>
-                            </form>
-                        </div>
-                    </article>
+                                <div class="clearfix"></div>
+                            </div>
+                        </article>
+                    </div>
+                    <!-- /item -->
+
+                    <!-- pagination -->
+                    <nav aria-label="Page navigation" class="text-center paginav">
+                        <ul class="pagination">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">...</a></li>
+                        </ul>
+                    </nav>
+                    <!-- /pagination -->
                 </div>
                 
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-4">
                     <aside class="two-column__right">
                         <div class="wrap-most-posts">
                             <!-- LIST POST -->
@@ -378,17 +526,34 @@
     <script src="sources/animate/wow.min.js"></script>
     <script src="sources/owl-carousel/js/owl.carousel.min.js"></script>
 
-    <!-- <script>
-        $('.owl-carousel').owlCarousel({
+    <script>
+        $('.slide-blog-fulwid .owl-carousel').owlCarousel({
             items: 1,
-            margin:10,
             nav:true,
+            dots: false,
             loop:true,
-            autoplay:true,
+            // autoplay:true,
             autoplayTimeout:5000,
-            navText : ["&#x027E8;","&#x027E9;"]
+            navText : ["&#x0221F;","&#x0221F;"]
         })
-    </script> -->
+
+        $('.slide-blog-fulwid .owl-carousel .item').each(function(index, value) {
+            var urlBG = $(value).attr('bg');
+            $(value).css('backgroundImage', 'url("../' + urlBG + '")');
+        })
+    </script>
+
+    <script>
+        // wget-categories
+        window.onscroll = function() {myFixedSticky()};
+        function myFixedSticky() {
+            if (window.pageYOffset >= $('.slide-blog-fulwid').height() + 30) {
+                $('#wget-categories').addClass('sticky');
+            } else {
+                $('#wget-categories').removeClass('sticky');
+            }
+        }
+    </script>
 
     <script type="text/javascript" src="js/scripts.js"></script>
 	

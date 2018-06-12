@@ -87,7 +87,7 @@ $menu-icon-color--active: #D00251;
 						transition: $time;
 
 						&:hover {
-							color: #adadad;
+							color: #F63761;
 						}
 					}
 				}
@@ -122,8 +122,6 @@ $menu-icon-color--active: #D00251;
 	}
 
 	form {
-		
-
 		input {
 			text-align: center;
 			padding: 15px 10px;
@@ -132,6 +130,7 @@ $menu-icon-color--active: #D00251;
 		}
 
 		button[type="submit"] {
+			letter-spacing: 1px;
 			border: none;
 			width: 100%;
 			font-weight: 600;
@@ -153,3 +152,19 @@ $menu-icon-color--active: #D00251;
 		}
 	}
 }
+
+
+// ICON BLOG LIKE - COMMENT
+.blog-status-icon { background: url('../images/blog-status-icon.png') no-repeat top left;  } 
+.blog-status-icon.like-active { background-position: 0 0; width: 17px; height: 15px; } 
+.blog-status-icon.big-comment { background-position: 0 -25px; width: 26px; height: 26px; } 
+.blog-status-icon.comment { background-position: 0 -61px; width: 19px; height: 19px; } 
+.blog-status-icon.big-like { background-position: 0 -90px; width: 24px; height: 23px; } 
+.blog-status-icon.big-like-active { background-position: 0 -123px; width: 23px; height: 22px; } 
+.blog-status-icon.like { background-position: 0 -155px; width: 18px; height: 17px; } 
+
+// ICON FOOTER SOCIAL
+.footer-social { background: url('../images/footer-social.png') no-repeat top left; width: 17px; height: 17px;  } 
+.footer-social.youtube { background-position: 0 0; width: 20px; height: 14px; } 
+.footer-social.facebook { background-position: 0 -24px; } 
+.footer-social.share-this { background-position: 0 -51px; } 

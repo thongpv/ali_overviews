@@ -42,7 +42,7 @@ header.header {
         &:before {
           left: 50%;
         }
-
+        
         &:hover {
           color: #F33D66;
         }
@@ -53,6 +53,18 @@ header.header {
           width: 30%;
         }
       } // a
+
+      li.active {
+        a {
+          color: #F33D66;
+        }
+
+        a:before,
+        a:after {
+          background-color: #F33D66;
+          width: 30%;
+        }
+      }
     }
   }
 
