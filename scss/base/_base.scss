@@ -71,6 +71,10 @@ body {
 	position: relative;
 }
 
+.capitalize {
+	text-transform: capitalize;
+}
+
 @for $i from 0 through 10 {
 	.mar-b-#{$i*5} {
 			margin-bottom: #{$i * 5}px !important;

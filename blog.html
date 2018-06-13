@@ -547,6 +547,10 @@
         // wget-categories
         window.onscroll = function() {myFixedSticky()};
         function myFixedSticky() {
+            var posFooter = $('footer.footer').position().top - ($('#wget-categories').height() + 60 + $('header.header').height());
+            if (window.pageYOffset > posFooter) {
+                return $('#wget-categories').removeClass('sticky');
+            }
             if (window.pageYOffset >= $('.slide-blog-fulwid').height() + 30) {
                 $('#wget-categories').addClass('sticky');
             } else {

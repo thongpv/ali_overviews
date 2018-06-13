@@ -153,6 +153,95 @@ $menu-icon-color--active: #D00251;
 	}
 }
 
+// FULL WIDTH VIDEO 
+.full-width-video {
+	background-position: center center;
+	background-size: cover;
+	color: #fff;
+	padding-top: 90px;
+	padding-bottom: 120px;
+	
+	&__title {
+		font-size: 38px;
+		font-weight: 600;
+		line-height: 1.4;
+	}
+
+	&__subtitle {
+		font-size: 21px;
+		font-weight: 500;
+	}
+
+	&__vid {
+		margin-top: 45px;
+	}
+}
+
+// FULL WIDTH TITLE 
+.full-width-title {
+	padding: 100px 0;
+}
+
+// LEFT IMG CONTENT
+.img-content {
+	.pwrap {
+		padding-top: 30px;
+		padding-bottom: 65px;
+		display: flex;
+		align-items: center;
+
+		.page-title {
+			margin-bottom: 45px;
+			line-height: 1.2;
+		}
+
+		.page-subtitle {
+			line-height: 1.6;
+		}
+
+		.pwrap__left,
+		.pwrap__right {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.pwrap__content {
+			max-width: 385px;
+			margin: auto;
+		}
+
+		.pwrap__img {
+			img {
+				box-shadow: 4px 4px 30px #bfbfbf;
+				max-width: 100%;
+				border: solid 1px #dedede;
+				border-radius: 7px;
+			}
+		}
+	}
+}
+
+// MEDIA CUSTOM
+.media--custom {
+	.media-left {
+		padding-right: 20px;
+	}
+
+	.media-body {
+		h4 {
+			font-size: 21px;
+			color: #333333;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 14px;
+			color: #999999;
+			font-weight: 600;
+			line-height: 1.6;
+		}
+	}
+}
 
 // ICON BLOG LIKE - COMMENT
 .blog-status-icon { background: url('../images/blog-status-icon.png') no-repeat top left;  } 
@@ -168,3 +257,41 @@ $menu-icon-color--active: #D00251;
 .footer-social.youtube { background-position: 0 0; width: 20px; height: 14px; } 
 .footer-social.facebook { background-position: 0 -24px; } 
 .footer-social.share-this { background-position: 0 -51px; } 
+
+
+// MAX WIDTH
+@media only screen and (max-width: 1200px) { 
+	.full-width-video {
+		padding-top: 40px;
+		padding-bottom: 70px;
+	}
+
+	.img-content {
+		.pwrap {
+			flex-direction: column;
+		}
+
+		.pwrap__content {
+			padding-bottom: 35px;
+			text-align: center;
+		}
+
+		&.img-content--left .pwrap__left {
+			order: 1
+		}
+	}
+}
+
+// MIN WIDTH
+@media only screen and (min-width: 1200px) { 
+	.img-content {
+		.pwrap__img {
+			padding-left: 100px;
+
+			&--right {
+				padding-left: 0px;
+				padding-right: 100px;
+			}
+		}
+	}
+}

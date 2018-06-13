@@ -19,9 +19,9 @@ $visibility: hidden;
 @import "fadeIn";
 // @import "fadeInDown";
 // @import "fadeInDownBig";
-// @import "fadeInLeft";
+@import "fadeInLeft";
 // @import "fadeInLeftBig";
-// @import "fadeInRight";
+@import "fadeInRight";
 // @import "fadeInRightBig";
 @import "fadeInUp";
 // @import "fadeInUpBig";
@@ -104,15 +104,15 @@ $visibility: hidden;
 // .fadeInDownBig {
 // 	@include fadeInDownBig($duration, $delay, $function, $fill, $visibility);
 // }
-// .fadeInLeft {
-// 	@include fadeInLeft($duration, $delay, $function, $fill, $visibility);
-// }
+.fadeInLeft {
+	@include fadeInLeft($duration, $delay, $function, $fill, $visibility);
+}
 // .fadeInLeftBig {
 // 	@include fadeInLeftBig($duration, $delay, $function, $fill, $visibility);
 // }
-// .fadeInRight {
-// 	@include fadeInRight($duration, $delay, $function, $fill, $visibility);
-// }
+.fadeInRight {
+	@include fadeInRight($duration, $delay, $function, $fill, $visibility);
+}
 // .fadeInRightBig {
 // 	@include fadeInRightBig($duration, $delay, $function, $fill, $visibility);
 // }

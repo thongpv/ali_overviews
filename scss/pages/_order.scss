@@ -1,0 +1,105 @@
+/* PAGES - order */
+.order-page.full-width-video {
+  background-image: url('../images/order/bg.png');
+}
+
+.order-page.full-width-title {
+	.page-subtitle {
+    margin-bottom: 30px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  .btn {
+    border: none;
+    outline: none !important;
+    padding: 15px 25px;
+    color: #fff;
+    background: -moz-linear-gradient(90deg, #5B2CEA 0, #8433F0 100%);
+    background: -webkit-gradient(linear, 90deg, color-stop(0, 5B2CEA), color-stop(100%, 8433F0));
+    background: -webkit-linear-gradient(90deg, #5B2CEA 0, #8433F0 100%);
+    background: -o-linear-gradient(90deg, #5B2CEA 0, #8433F0 100%);
+    background: -ms-linear-gradient(90deg, #5B2CEA 0, #8433F0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1');
+    background: linear-gradient(90deg, #5B2CEA 0, #8433F0 100%);
+    border-radius: 7px;
+    transition: $time;
+
+    &:focus {
+      box-shadow: inset 0 3px 20px rgba(0, 0, 0, 0.33);
+    }
+  }
+}
+
+.order-page.left-img-content{
+  .page-subtitle {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.more-do {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  .media--custom {
+    margin-bottom: 45px;
+  }
+}
+
+.get-it-now {
+  background-image: url(../images/order/bg-get-it-now.png);
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -1px;
+
+  .page-title {
+    color: #fff;
+  }
+
+  .page-subtitle {
+    color: #fff;
+  }
+
+  button {
+    background-color: #fff;
+    border: none;
+    outline: none !important;
+    border-radius: 7px;
+    font-weight: 600;
+    color: #24253A;
+    padding: 12px 25px;
+    transition: $time;
+
+    &:hover {
+      color: #fff;
+      background: #F33D66;
+    }
+
+    &:active, &:focus {
+      color: #fff !important;
+      background: #d8375b !important;
+    }
+  }
+}
+
+.order-page-md { background: url('../images/order/order-page.png') no-repeat top left; width: 40px; height: 40px;  } 
+.order-page-md.easy { background-position: 0 0; } 
+.order-page-md.change { background-position: 0 -50px; } 
+.order-page-md.move { background-position: 0 -100px; } 
+.order-page-md.filter { background-position: 0 -150px; } 
+.order-page-md.connect { background-position: 0 -200px; } 
+.order-page-md.track { background-position: 0 -250px; } 
+.order-page-md.stock { background-position: 0 -300px; } 
+
+@media only screen and (min-width: 1200px) { 
+  .more-do .media--custom {
+    .media-body {
+      padding-right: 100px;
+    }
+  }
+}
