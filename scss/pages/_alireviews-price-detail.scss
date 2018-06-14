@@ -1,0 +1,73 @@
+/* PAGES - alireviews price detail */
+.alireviews-price-page.get-price {
+  background-image: url('../images/alireviews-price-detail/bg-price.png');
+  background-attachment: fixed;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  .page-title,
+  .page-subtitle {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 15px 30px;
+    color: #FEB500;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-top: 40px;
+    border: none;
+    outline: none !important;
+  }
+}
+
+.ask-questions {
+  color: #666666;
+  padding: 45px 0;
+  padding: 100px;
+
+  .pad-ask {
+    max-width: 80%;
+  }
+
+  h2 {
+    font-size: 51px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: 21px;
+  }
+}
+
+.alireviews-price-page.content-price {
+  color: #666666;
+  margin-top: 120px;
+  text-transform: capitalize;
+
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media only screen and (max-width: 1200px) { 
+  .ask-questions {
+    padding-bottom: 45px;
+
+    h2 {
+      margin-bottom: 35px;
+    }
+
+    .pad-ask {
+      margin-bottom: 50px;
+    }
+  }
+}

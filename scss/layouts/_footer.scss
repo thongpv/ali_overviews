@@ -1,4 +1,7 @@
+$footer-fz: 12px;
+
 footer.footer {
+  font-size: $footer-fz;
   background-color: #24253A;
 
   .footer__top {
@@ -32,7 +35,7 @@ footer.footer {
       h6 {
         color: #fff;
         margin: 0;
-        font-size: 14px;
+        font-size: $footer-fz;
         font-weight: 600;
         margin-bottom: 40px;
       }
@@ -66,7 +69,7 @@ footer.footer {
     padding-bottom: 30px;
 
     &__copy {
-      font-size: 14px;
+      font-size: $footer-fz;
       color: #A7A7B0;
     }
 
@@ -115,8 +118,12 @@ footer.footer {
 }
 
 @media only screen and (max-width: 992px) { 
-  footer.footer .footer__top .footer__menu__item {
-    padding-top: 70px;
+  footer.footer {
+    text-align: center;
+    
+    .footer__top .footer__menu__item {
+      padding-top: 70px;
+    }
   }
 }
 

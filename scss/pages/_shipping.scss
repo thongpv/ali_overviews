@@ -1,0 +1,142 @@
+/* PAGES - alireviews */
+.shipping-page.full-width-video {
+  background-image: url('../images/shipping/bg.png');
+}
+
+.shipping-page.full-width-title {
+	.page-subtitle {
+    margin-bottom: 30px;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  .btn {
+    border: none;
+    outline: none !important;
+    padding: 15px 25px;
+    color: #fff;
+    background: -moz-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -webkit-gradient(linear, 90deg, color-stop(0, 056F38), color-stop(100%, 22B573));
+    background: -webkit-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -o-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -ms-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1');
+    background: linear-gradient(90deg, #056F38 0, #22B573 100%);
+    border-radius: 7px;
+    transition: $time;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      box-shadow: inset 0 3px 20px rgba(0, 0, 0, 0.33);
+    }
+  }
+}
+
+.shipping-page.left-img-content{
+  .page-subtitle {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.more-do {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  .media--custom {
+    margin-bottom: 45px;
+  }
+}
+
+.get-it-now {
+  background-image: url(../images/order/bg-get-it-now.png);
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: -1px;
+
+  .page-title {
+    color: #fff;
+  }
+
+  .page-subtitle {
+    color: #fff;
+  }
+
+  button {
+    background-color: #fff;
+    border: none;
+    outline: none !important;
+    border-radius: 7px;
+    font-weight: 600;
+    color: #24253A;
+    padding: 12px 25px;
+    transition: $time;
+
+    &:hover {
+      color: #fff;
+      background: #F33D66;
+    }
+
+    &:active, &:focus {
+      color: #fff !important;
+      background: #d8375b !important;
+    }
+  }
+}
+
+.shipping-page.mmenuz {
+  li:last-child .btn {
+    background: -moz-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -webkit-gradient(linear, 90deg, color-stop(0, 056F38), color-stop(100%, 22B573));
+    background: -webkit-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -o-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -ms-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1');
+    background: linear-gradient(90deg, #056F38 0, #22B573 100%);
+  }
+}
+
+.shipping-page.img-three-column {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url('../images/shipping/bg-img-three.png');
+  background-attachment: fixed;
+}
+
+.shipping-page .wid-price__see-all a,
+.shipping-page .price-item__value {
+  color: #22B573 !important; 
+}
+
+.shipping-page.wid-price .wrap-price {
+  .price-item--active {
+    border-top: solid 3px #22B573;
+  }
+
+  .price-item__butn .btn {
+    background: -moz-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -webkit-gradient(linear, 90deg, color-stop(0, 056F38), color-stop(100%, 22B573));
+    background: -webkit-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -o-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    background: -ms-linear-gradient(90deg, #056F38 0, #22B573 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1');
+    background: linear-gradient(90deg, #056F38 0, #22B573 100%);
+  }
+}
+
+@media only screen and (max-width: 992px) { 
+  .shipping-page.img-three-column .img-three__item {
+    margin-bottom: 50px !important;
+
+    &__img {
+      margin-bottom: 15px !important;
+    }
+  }
+}

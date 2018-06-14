@@ -87,7 +87,7 @@ $time-transition-rdb-ckb: 0.3s;
         height: 10px;
         border: solid white;
         border-width: 0 2px 2px 0;
-        @include rotate(45deg);
+        @include rotate(45);
     }
 
     input[type="radio"]:checked ~ .checkmark-rdb:after {
