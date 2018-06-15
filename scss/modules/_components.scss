@@ -417,29 +417,86 @@ $menu-icon-color--active: #D00251;
 
 
 // PRICE CUSTOM 
-.wrap-price {
+.wrap-price-detail {
+	position: relative;
 	margin-top: 30px;
-	padding: 50px 30px;
-	box-shadow: 1px 1px 10px #ccc;
 	border-radius: 10px;
+	padding-bottom: 20px;
+	box-shadow: 1px 3px 15px #cccccc;
+
+	.pos-header {
+		background-color: #F6F6F6 !important;
+		display: flex;
+		text-align: center;
+		font-weight: 600;
+		width: 100%;
+		z-index: 999;
+		font-size: 17px;
+    top: 0;
+		border-bottom: solid 1px #ccc;
+		position: absolute;
+
+		> div {
+			flex: 1;
+			padding: 25px;
+			position: relative;
+
+			&:first-child {
+				flex: 2;
+				text-align: left;
+				margin-right: 45px;
+			}
+		}
+	}
+
+	.price-custom__organ {
+		color: #FEB500;
+		position: relative;
+
+		&.activez:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 15%;
+			border: solid 2px #FEB500;
+			transform: translateX(-50%);
+			border-radius: 3px;
+		}
+	}
 }
 
 .price-custom {
 	position: relative;
 	z-index: 99;
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 14px;
+	font-weight: 300;
+
+	.bg-header {
+		background-color: #F6F6F6 !important;
+	}
 
 	td {
 		text-align: center;
+		transition: $time;
+		font-weight: 300;
 
 		&:first-child {
 			text-align: left;
+			font-size: 14px;
 		}
 	}
 
-	tbody > tr {
-		margin: 10px 0;
+	.tr-button td {
+		padding: 0px;
+		padding-bottom: 25px;
+		background-color: #fff;
+	}
+
+	tbody > tr.border-solid td {
+		border-top: solid 1px #eaeaea;
+		height: 0;
+		padding: 0;
 	}
 
 	thead > tr > th,
@@ -448,7 +505,7 @@ $menu-icon-color--active: #D00251;
 	tbody > tr > td,
 	tfoot > tr > td {
 		border-top: none;
-		padding: 25px 0;
+		padding: 25px;
 	}
 
 	thead > tr > th {
@@ -457,6 +514,7 @@ $menu-icon-color--active: #D00251;
 	}
 
 	.btn {
+		font-weight: 600;
 		border: none;
     outline: none !important;
     background-color: #ccc;
@@ -481,21 +539,6 @@ $menu-icon-color--active: #D00251;
 	.price-custom__title {
 		font-size: 21px;
 		font-weight: 600;
-	}
-
-	.price-custom__organ {
-		color: #FEB500;
-		position: relative;
-
-		&.active:before {
-			content: '';
-			position: absolute;
-			top: -15px;
-			left: 50%;
-			width: 15%;
-			border: solid 2px #FEB500;
-			transform: translateX(-50%);
-		}
 	}
 }
 
@@ -532,6 +575,33 @@ $menu-icon-color--active: #D00251;
 			padding-top: 35px;
 			background-color: #f3f3f3;
 			margin-bottom: 35px;
+		}
+	}
+
+	.price-custom {
+		thead > tr > th,
+		thead > tr > td,
+		tbody > tr > th,
+		tbody > tr > td,
+		tfoot > tr > td {
+			padding: 15px;
+			font-weight: 500;
+		}
+
+		.btn {
+			padding: 10px 8px;
+			font-size: 12px;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {  
+	.wrap-price-detail {
+		max-width: 100%;
+		overflow: auto;
+		
+		table, .pos-header {
+			min-width: 768px;
 		}
 	}
 }

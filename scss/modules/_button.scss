@@ -22,3 +22,23 @@
 #back_to_top:hover {
     background-color: #e9ebec;
 }
+
+.shipping-bg {
+    background: -moz-linear-gradient(90deg, #056F38 0, #22B573 100%) !important;
+    background: -webkit-gradient(linear, 90deg, color-stop(0, 056F38), color-stop(100%, 22B573)) !important;
+    background: -webkit-linear-gradient(90deg, #056F38 0, #22B573 100%) !important;
+    background: -o-linear-gradient(90deg, #056F38 0, #22B573 100%) !important;
+    background: -ms-linear-gradient(90deg, #056F38 0, #22B573 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1') !important;
+    background: linear-gradient(90deg, #056F38 0, #22B573 100%) !important;
+}
+
+.alireviews-bg {
+    background: -moz-linear-gradient(-45deg, #FFAD00 0, #E87F1B 100%) !important;
+    background: -webkit-gradient(linear, -45deg, color-stop(0, FFAD00), color-stop(100%, E87F1B)) !important;
+    background: -webkit-linear-gradient(-45deg, #FFAD00 0, #E87F1B 100%) !important;
+    background: -o-linear-gradient(-45deg, #FFAD00 0, #E87F1B 100%) !important;
+    background: -ms-linear-gradient(-45deg, #FFAD00 0, #E87F1B 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1') !important;
+    background: linear-gradient(-45deg, #FFAD00 0, #E87F1B 100%) !important;
+}

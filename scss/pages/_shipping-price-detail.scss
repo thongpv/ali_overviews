@@ -1,6 +1,6 @@
 /* PAGES - alireviews price detail */
-.alireviews-price-page.get-price {
-  background-image: url('../images/alireviews-price-detail/bg-price.png');
+.shipping-price-page.get-price {
+  background-image: url('../images/shipping-price-detail/bg-price.jpg');
   background-attachment: fixed;
   padding-top: 50px;
   padding-bottom: 60px;
@@ -17,7 +17,7 @@
   
   .btn {
     padding: 15px 30px;
-    color: #FEB500;
+    color: #22B573;
     font-weight: 600;
     border-radius: 7px;
     margin-top: 40px;
@@ -52,7 +52,22 @@
   }
 }
 
-.alireviews-price-page.content-price {
+.shipping-price-page {
+  .price-custom__organ {
+    color: #22B573;
+  
+    &.activez:before {
+      border-color: #22B573;
+    }
+  }
+
+  .pos-header > div:first-child {
+    flex: 1;
+    margin-right: 110px;
+  }
+}
+
+.shipping-price-page.content-price {
   color: #666666;
   margin-top: 120px;
   text-transform: capitalize;
@@ -73,5 +88,16 @@
     .pad-ask {
       margin-bottom: 50px;
     }
+  }
+
+  .shipping-price-page .pos-header > div:first-child {
+    margin-right: 90px;
+  }
+}
+
+
+@media only screen and (max-width: 992px) { 
+  .shipping-price-page .pos-header > div:first-child {
+    margin-right: 70px;
   }
 }
