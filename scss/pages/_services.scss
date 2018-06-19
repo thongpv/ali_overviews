@@ -1,0 +1,131 @@
+.fuild-three-cloumn {
+  .page-subtitle {
+    color: #333;
+  }
+}
+
+.services-page.best-tools {
+  background-image: url('../images/service/bg-full.png');
+  padding-top: 0;
+  padding-bottom: 75px;
+
+  .best-tools__left {
+    padding-top: 100px; 
+  }
+}
+
+
+.services-page.fuild-three-cloumn {
+  padding-bottom: 75px;
+  text-align: center;
+}
+.services-page.fuild-three-cloumn .wrap-how-use {
+  img {
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: 21px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.services-page.img-top-col {
+  padding-top: 65px;
+  padding-bottom: 100px;
+  color: #666666;
+
+  .col-md-4 {
+    padding: 0 30px;
+    display: flex;
+  }
+
+  img {
+    margin-top: -75px;
+    margin-bottom: 20px;
+  }
+
+  .wrap-img-top {
+    padding: 25px;
+    padding-bottom: 90px;
+    box-shadow: 2px 3px 20px #dedede;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .img-top__title {
+    font-weight: 600;
+    font-size: 31px;
+  }
+
+  .img-top__descript {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    padding-bottom: 20px;
+    // border-bottom: solid 1px #ececec;
+  }
+
+  .wrp-butn {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    padding: 0 30px;
+
+    > div {
+      border-top: solid 1px #ececec;
+      padding-top: 20px;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    padding: 15px 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    outline: none !important;
+    transition: $time;
+  }
+}
+
+.services-page .perfect-sales__right article p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.services-page.perfect-sales {
+  background: #efefef;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-bottom: 70px;
+
+  .perfect-sales__left {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 992px) { 
+  .services-page {
+    padding-bottom: 0 !important;
+
+    .wrap-img-top {
+      margin-bottom: 115px;
+    }
+  }
+
+  .perfect-sales__right {
+    display: inherit !important;
+
+    .sales_item {
+      display: inherit;
+    }
+  }
+
+  .services-page.img-top-col .row {
+    display: inherit !important;
+  }
+}

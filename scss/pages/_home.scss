@@ -74,8 +74,10 @@
   }
 
   &__right {
+    display: flex;
+
     .sales_item {
-      display: table;
+      display: flex;
 
       > div {
         transition: $time;
@@ -275,6 +277,9 @@ section.customers {
   overflow: hidden;
 
   &__left {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
     h5 {
       font-size: 16px;
     }
@@ -284,19 +289,27 @@ section.customers {
     }
 
     &__wrap {
-      margin: auto;
-      position: absolute;
-      top: 50%;
-      left: 30%;
-      transform: translate(0, -50%);
+    
     }
   } // left
 
   &__right {
-    background-image: url('../images/home/Placeholder.png');
     background-size: cover;
-    height: 640px;
   } // right
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	// padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .customers-review {
@@ -423,17 +436,21 @@ section.customers {
   }
 
   .how-using { 
+    > .row {
+      flex-direction: column;
+    }
+
     &__left {
-      background-image: url(../images/home/Placeholder.png);
       background-attachment: fixed;
       background-position: right;
       background-size: cover;
-      height: 640px;
+      // height: 640px;
 
       &__wrap {
-        transform: translate(-50%, -50%);
+        // transform: translate(-50%, -50%);
         background: #fff;
         padding: 25px 50px;
+        width: 100%;
       }
     }
   }
@@ -452,11 +469,6 @@ section.customers {
 }
 
 @media only screen and (max-width: 768px) { 
-	.how-using__left__wrap {
-    padding: 20px;
-    width: 80%;
-  }
-
   .best-tools .wrap_flex .best-tools__left {
     padding: 0 30px;
   }
@@ -466,8 +478,6 @@ section.customers {
 @media only screen and (min-width: 1200px) { 
   .how-using {
     &__left {
-      height: 640px;
-  
       &__wrap {
         max-width: 500px;
         margin: auto;

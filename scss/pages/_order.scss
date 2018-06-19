@@ -1,7 +1,10 @@
 /* PAGES - order */
 .order-page.full-width-video {
   padding-top: 120px;
-  background-image: url('../images/order/bg.png');
+  
+  &:before {
+    background-image: url('../images/order/bg.png');
+  }
 }
 
 .order-page.full-width-title {

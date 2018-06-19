@@ -160,7 +160,13 @@ $menu-icon-color--active: #D00251;
 	color: #fff;
 	padding-top: 90px;
 	padding-bottom: 120px;
-	
+	position: relative;
+	overflow: hidden;	
+
+	iframe {
+		box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.22);
+	}
+
 	&__title {
 		font-size: 38px;
 		font-weight: 600;
@@ -174,6 +180,18 @@ $menu-icon-color--active: #D00251;
 
 	&__vid {
 		margin-top: 45px;
+	}
+
+	&:before {
+		content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    // filter: blur(10px);
+    background-position: center center;
+    background-size: cover;
 	}
 }
 
